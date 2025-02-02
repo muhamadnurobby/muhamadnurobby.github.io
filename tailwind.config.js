@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html"], // Pastikan path ini sesuai dengan file Anda
+  darkMode: "class",
   theme: {
     extend: {
       backdropFilter: {

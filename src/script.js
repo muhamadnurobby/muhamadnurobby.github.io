@@ -40,4 +40,14 @@ AOS.init({
   offset: 300,
 });
 
+//Darkmode toggle
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  darkToggle.checked
+    ? html.classList.add("dark")
+    : html.classList.remove("dark");
+});
+
 // npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
