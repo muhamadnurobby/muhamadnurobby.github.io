@@ -12,7 +12,10 @@
   </head>
   <body>
     <!-- Hero Section -->
-    <section id="home" class="pt-36 dark:bg-dark">
+    <section
+      id="home"
+      class="pt-36 dark:bg-dark transition-colors duration-1000"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="px-4 w-full lg:w-1/2 self-center" data-aos="fade-right">
@@ -65,7 +68,10 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-36 dark:bg-dark">
+    <section
+      id="about"
+      class="pt-36 pb-36 dark:bg-dark transition-colors duration-1000"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="px-4 w-full lg:w-1/2">
@@ -118,6 +124,7 @@
               >Muhamad Nurobby</a
             >
           </div>
+
           <div class="flex items-center px-4">
             <button
               id="hamburger"
@@ -168,22 +175,6 @@
                     >Contact</a
                   >
                 </li>
-                <li class="flex items-center pl-8 mt-3">
-                  <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                      >
-                        <div
-                          class="toggle-circle h-3 w-3 rounded-full bg-white transition duration-300 ease-out"
-                        ></div>
-                      </div>
-                    </label>
-                    <span class="ml-2 text-sm text-slate-500">dark</span>
-                  </div>
-                </li>
               </ul>
             </nav>
           </div>
@@ -192,7 +183,10 @@
     </header>
     <!-- Header End -->
     <!-- Portofolio Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+    <section
+      id="portfolio"
+      class="pt-36 pb-16 bg-slate-100 dark:bg-dark transition-colors duration-1000"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -366,7 +360,10 @@
     </section>
     <!-- Portofolio End -->
     <!-- Footer Section Start -->
-    <footer id="contact" class="bg-dark pt-24 pb-12 dark:bg-slate-800">
+    <footer
+      id="contact"
+      class="bg-dark pt-24 pb-12 dark:bg-slate-800 transition-colors duration-1000"
+    >
       <div class="container">
         <div class="bg-red-500" width="400" height="300px"></div>
         <div class="flex justify-center w-full px-4">
@@ -452,6 +449,24 @@
       ><span class="block h-5 w-5 rotate-45 mt-2 border-t-2 border-l-2"> </span>
     </a>
     <!-- Back to top end -->
+    <!-- Darkmode start -->
+    <div class="fixed top-20 left-0 w-full flex justify-center">
+      <div class="max-w-[1294px] w-full px-4">
+        <div class="flex">
+          <input type="checkbox" class="hidden" id="dark-toggle" />
+          <label for="dark-toggle">
+            <div
+              class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+            >
+              <div
+                class="toggle-circle h-3 w-3 rounded-full bg-white transition duration-300 ease-out"
+              ></div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Darkmode end -->
 
     <script type="module" src="src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
